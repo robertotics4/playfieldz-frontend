@@ -16,7 +16,7 @@ export default function Login() {
         phone,
         password,
       });
-      localStorage.setItem("token", response.data.token);
+      localStorage.setItem("playfieldz:token", response.data.token);
       navigate("/dashboard");
     } catch (err) {
       setError("Usuário ou senha inválidos");
